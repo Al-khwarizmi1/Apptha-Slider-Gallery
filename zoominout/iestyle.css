@@ -1,0 +1,4 @@
+		/* IE < 9 doesn't display the image for strange reasons... */
+		html.ielt9 #iviewer .viewer {
+			display: block;
+		}

@@ -1,0 +1,160 @@
+
+.pica_show_featured_photos img{
+
+	
+	
+}
+.pica_show_featured_photos .pica-show-albumname { 
+		
+		padding: 1px;
+		text-align: left;
+		
+		position: absolute;
+		display: none;
+		background: black;
+bottom: 0px;
+color: white;
+
+text-decoration: underline;
+width:99%;
+}
+.pica-show-albumname a{color:#fff;}
+.pica-show-image{
+	 float: left; position: relative;
+	 margin: 3px;
+	 }
+
+.pica_show_featured:hover div.pica-show-albumname{display:block}
+
+
+
+/*  for album images */
+
+.pica_show_albums .pica-show-albumname { 
+		
+		padding: 0px 0px 2px 2px;
+		text-align: left;
+		width: 142px;
+		top:124px;
+		position: absolute;
+		display: none;
+		background: black;
+bottom: 0px;
+color: white;
+margin: 0px 0px 8px;
+text-decoration: underline;
+		
+}
+.pica_show_albums:hover div.pica-show-albumname{display:block}
+
+.albphoto-context-current{
+color: black;
+font-size: 1.3em;
+font-weight: bold;
+}
+
+
+
+
+
+#facebox .b {
+  background:none;
+}
+
+#facebox .tl {
+  background:none;
+}
+
+#facebox .tr {
+  background:none;
+}
+
+#facebox .bl {
+  background:none;
+}
+
+#facebox .br {
+  background:none;
+}
+
+#facebox {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+  opacity:100;
+  filter:inherit !important;
+}
+
+#facebox .popup {
+  position: relative;
+}
+
+#facebox table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+#facebox .body {
+  padding: 10px;
+  background: transparent;
+  /*width: 370px;*/
+  height:520px;
+  vertical-align: middle;
+}
+
+#facebox .loading {
+  text-align: center;
+}
+
+#facebox .image {
+  text-align: center;
+}
+
+#facebox img {
+  border: 0;
+}
+
+#facebox .footer {
+  border-top: 1px solid #DDDDDD;
+  padding-top: 5px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+#facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {
+  height: 10px;
+  width: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+.loading
+{
+    background: url('../uploads/loadinfo.gif') no-repeat transparent;
+     width:48px;
+    height:48px;
+}
+a.close{
+    background: url('../uploads/close.png') no-repeat transparent;
+    width:20px;
+    height:20px;
+    display:block;
+    position:absolute;
+    top:5px;
+    right:5px;
+    z-index:100000000000000000;
+   *position:static;
+    
+    
+}
+
+@media \0screen {
+  .mac-gallery-image{background:#000;width: 800px;margin: 0 auto;text-align: center;display:block;max-height:500px;visibility: visible;vertical-align: middle;overflow: hidden;}
+  .mac-gallery-image img{display:block;visibility: visible;margin: 0px auto !important;height:100%;}
+  .macpopup_bottom{background:#fff;width: 800px;}
+  .mac-gallery-image{height:auto !important;}
+    
+}
+

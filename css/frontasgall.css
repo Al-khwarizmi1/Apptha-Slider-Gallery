@@ -1,0 +1,79 @@
+/*
+ ***********************************************************/
+/**
+ * @name          : Mac Doc Photogallery.
+ * @version	      : 2.5
+ * @package       : apptha
+ * @subpackage    : mac-doc-photogallery
+ * @author        : Apptha - http://www.apptha.com
+ * @copyright     : Copyright (C) 2011 Powered by Apptha
+ * @license	      : GNU General Public License version 2 or later; see LICENSE.txt
+ * @abstract      : The core file of calling Mac Photo Gallery.
+ * @Creation Date : June 20 2011
+ * @Modified Date : September 30 2011
+ * */
+/*
+ ***********************************************************/
+
+/* style for Common Mac Photo Gallery pages  */
+
+ .asgallLeft { float:left;}
+ .asgallRight { float:right;}
+ .asgallClear { clear:both; }
+ .asgallArrow img {cursor:pointer}
+ .pica-show-albumname { background: black;bottom: 5px;color: white;display: none;position: absolute;text-align: left;
+ text-decoration: none;
+ width: 100%;
+  }
+ .asgall_phtcount { display:block;font-size:0.8em;font-family:arial;}
+ .asgall_phtcount a{ text-decoration:none; }
+ .pica-show-albumname span { padding: 0px 5px;font-family:arial !important;font-size:12px !important;}
+ .clearfix:after {clear:both;display:block;content:'' }
+ 
+ .asgallPhoto_spacing a img { padding:0px !important; border;border: 1px solid #999;}
+ .asgallPname { padding:0px 0px 0px 0px;color:#666; font-weight:none; font-size:12px !important;font-family:'arial' !important;}
+ .asgallPname1{padding:0px 0px 0px 0px; font-weight:700; font-size:12px !important;font-family:'arial' !important;}
+ .photoTable {  padding:0px !important; border:none !important; }
+  .photoTable tr td { text-align: center !important; }
+ .asgallArrow { vertical-align: middle; padding:0px !important; border:none !important; }
+ .asgallPhoto { vertical-align: middle; padding:0px !important; border:none !important; }
+ 
+.asgallProperty {border:1px solid #fff;padding: 0px 5px;float:left}
+.asgallProperty img{padding-right:5px;}
+.asgallProperty a{font-size:0.8em;text-decoration:none;}
+
+.asgall_spacing {float:left;line-height: 16px;font-family:arial !important }
+.asgallProperty:hover {border:1px solid #ccc;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;padding: 0px 5px;}
+
+.ad-gallery img {margin:0px !important} 
+.asgallPhoto_spacing { cursor:pointer;text-align:center;}
+.asgallPhoto_spacing img{ margin:0px !important;}
+.asgall-album-date { font-size:11px;color:#666; } 
+.as_albumname { color: #666 !important;font-weight:bold;font-size: 15px;padding-top:7px;} 
+.as_albumname a { text-decoration:none;}
+.asgall-shadow { -moz-box-shadow: 2px  4px 8px #999 ;-webkit-box-shadow: 2px  4px 8px #999;
+ padding: 0px  !important;box-shadow: 2px  4px 8px #999  }
+ .pica-show-albumname { height:24px; overflow:hidden; }
+.separator {background:url(./divider.png) no-repeat; float:left;
+font-size: 120%;
+
+line-height: normal;
+list-style: none;
+margin: 5px 2px;
+outline: none;
+overflow: hidden;
+padding: 0px 0px 0px 5px;
+padding-left: 5px;
+text-decoration: none;
+vertical-align: middle;
+width: 0px; }
+ .get-border { border-bottom: 1px solid #CCC;
+
+margin-bottom: 10px;
+width: 100%;}
+#asphotoSize{padding:0 25px !important;}
+#showSinglephoto { font-family:arial !important;}
+.get_asgall { font-family:arial !important;font-size:12px !important;}
+.asgallheading {font-size: 17px;font-weight: bold;margin-bottom: 0px;font-family:arial !important;margin:0px !important;padding:0px !important}
+.asgallDesc {font-size:12px;padding:10px 0 10px 0px;text-align: left;color:#333;background:#ccc;font-family:'arial';line-height:18px;}
+#gallery {font-family:arial !important;font-size:12px; float:left;}

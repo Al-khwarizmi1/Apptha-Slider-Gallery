@@ -1,0 +1,335 @@
+/*
+ ***********************************************************/
+/**
+ * @name          : Mac Doc Photogallery.
+ * @version	      : 2.5
+ * @package       : apptha
+ * @subpackage    : mac-doc-photogallery
+ * @author        : Apptha - http://www.apptha.com
+ * @copyright     : Copyright (C) 2011 Powered by Apptha
+ * @license	      : GNU General Public License version 2 or later; see LICENSE.txt
+ * @abstract      : The core file of calling Mac Photo Gallery.
+ * @Creation Date : June 20 2011
+ * @Modified Date : September 30 2011
+ * */
+
+/*
+ ***********************************************************/
+
+/* style for Common Mac Photo Gallery pages  */
+
+ root { display: block;}
+.clear {clear:both;}
+.clear_both{clear: both;}
+.clearfix:after { clear: both;display: block;content: " "; height: 0px;visibility: hidden;}
+.clearfix {display: inline-block;}
+ a, img { margin: 0px;padding: 0px;}
+/* Hide these rules from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix { display: block; }
+li.clearfix { display: list-item;}
+.mac-no-border {border: none !important; padding: 0px !important;margin:0px !important}
+
+.macLeft{ float:left;}
+.bind_macPhotos {width:60%;height:auto;float:left;}
+
+.left_align{ float:left;margin:0 20px 20px 0;}
+.left_column{width:25%;padding-right:15px;float:left;}
+.right_column{width:70%;padding-right:5px;float:left;}
+
+.main_mac{cursor: pointer; width: 80px; left: 0px;}
+.mac_gallery_photos{display:table; margin-bottom:10px;}
+.mac_gallery {display:table;clear:both;width:100%;border-color: #DFDFDF;
+              border-bottom-left-radius: 4px 4px;border-bottom-right-radius: 4px 4px;border-style: solid;
+              border-width: 1px;border-top-left-radius: 4px 4px;border-top-right-radius: 4px 4px;margin-top:10px;}
+.mac_gallery th
+{
+     background: #DFDFDF url(../images/gray-grad.png) repeat-x scroll 0% 0%;
+     color: #333;text-shadow: rgb(255, 255, 255, 0.796875) 0px 1px 0px;line-height: 1.3em;
+     padding: 7px 0px 7px 7px;text-align: left; font-size: 11px;}
+.mac_gallery td
+{ 
+    text-align: justify;vertical-align: top;
+    padding: 5px 0px 10px 7px; font-size: 11px;
+    color:#666;border-bottom:1px solid #DFDFDF;
+}
+
+#second-carousel
+{
+    text-indent: 0px;
+}
+.inner_albim_image img{
+    width: 100%;
+    height: 100%;
+}
+.mac_gallery th.checkall {width:4%;text-align: left;}
+.mac_gallery .image {width:10%;}
+.mac_gallery .name {width:10%;}
+.mac_gallery .desc {width:15%;}
+.mac_gallery .albumid{width:9%; padding:0px;}
+.mac_gallery .on {width:10%;}
+.mac_gallery .gallery{width:10%;}
+.mac_gallery .viewgallery{width:10%;}
+.mac_date{ color:#787878;padding: 0px 5px;width: 70px;float:left;}
+.macName { font-weight: bold;color:#21759B !important;font-size:12px;text-transform: capitalize;}
+.countimg { color:#787878;}
+/* style for mac gallery table*/
+.mac_groupgallery {display:table;clear:both;width:100%;border-color: #DFDFDF;
+              border-bottom-left-radius: 4px 4px;border-bottom-right-radius: 4px 4px;border-style: solid;
+              border-width: 1px;border-top-left-radius: 4px 4px;border-top-right-radius: 4px 4px;margin-top:10px;}
+.mac_groupgallery th
+{
+     background: #DFDFDF url(../images/gray-grad.png) repeat-x scroll 0% 0%;
+     color: #333;text-shadow: rgb(255, 255, 255, 0.796875) 0px 1px 0px;line-height: 1.3em;
+     padding: 7px 0px 7px 7px;text-align: left; font-size: 11px;}
+.mac_groupgallery td
+{
+    text-align: justify;vertical-align: top;
+    padding: 5px 0px 10px 7px; font-size: 11px;
+    color:#666;border-bottom:1px solid #DFDFDF;
+}
+.mac_groupgallery .checkall {width:6%;text-align: left;}
+.mac_groupgallery .name {width:5%;}
+.mac_groupgallery .albumid{width:3%;}
+.mac_groupgallery .on {width:5%;}
+.editView
+{
+    float:left;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.editView a
+{
+   float:left;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+      visibility: visible;
+}
+tr .delView a
+{
+    float:left;
+    color: #BC0B0B;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+    visibility: hidden;
+}
+
+tr:hover .delView a
+{
+    float:left;
+    color: #BC0B0B;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+    visibility: visible;
+}
+.delView a:hover
+{
+    color:blue;
+}
+.preview{
+	position:absolute;
+	padding:5px;
+      	color:#fff;
+	}
+.edit_macPhotos{
+            float: right;
+            width:25%;
+}
+.hndle{
+    background: url("../images/gray-grad.png") repeat-x scroll left top #DFDFDF;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    padding: 7px 9px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    cursor: move;
+
+    -moz-border-radius: 6px 6px 0 0;
+}
+.photo_desc {
+    width:100%;
+    border:1px solid #ccc;
+}
+.return_back{
+    text-decoration: none;
+}
+.album {
+   
+    float: left;
+    height: 50px;
+    width: 120px;
+}
+.fix_wid
+{
+    width: 100%;
+}
+.album .mac_title
+{
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color:black;
+}
+.mac_title
+{
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    color:white;
+    padding: 2px 5px 0px 3px;
+}
+.mac_title a
+{
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    color:white;
+    padding: 2px 5px 0px 3px;
+    text-decoration: none;
+}
+.mac_sort_arrow
+{
+    text-align: center;
+    cursor:move;
+
+}
+.ulwidget .mac_title
+{
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    color:white;
+    font-size: 11px;
+    padding: 0px 5px;
+}
+.mac_des
+{
+     font-family: Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color:white;
+    padding: 0px 5px;
+}
+.album .mac_des
+{
+     font-family: Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color:white;
+    
+}
+.ulwidget .mac_des
+{
+     font-family: Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color:white;
+
+}
+
+.album .description{
+    float:left;
+    font-size: 16px;
+    color: #0066cc;
+}
+#albwrapper {
+width: 100%;
+padding: 0 13px 0 15px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+font-size: 12px;
+line-height: 18px !important;
+margin: 10px 0px;
+}
+
+.macSettings table tr td{ padding-bottom: 20px; width: 50%}
+
+a.thumbnail{
+    opacity:0.4;
+}
+
+a:hover.thumbnail{
+    opacity:1.0;
+}
+
+ul.actions{
+list-style-type:none;
+padding:10px 0px;
+margin:0px;
+
+}
+
+ul.actions li{
+background:url(../images/gallery-bg.png) no-repeat ;
+width:100px;
+
+padding:4px 0;
+margin:0px 0px 2px 0;
+margin-left:3px;
+text-align:center;
+color:#990000;
+}
+
+ul.actions li a {
+padding: 3px 0px 0px;
+color:#666;
+text-decoration: none;
+line-height: 12px;
+}
+
+ul.actions li a:hover {
+padding: 3px 0px 0px;
+color:#990000;
+text-decoration: none;
+line-height: 12px;
+}
+#content #macshow { display:block; }
+.ulwidget #macshow { display:none; }
+
+.macSettings table{width: 48%;border: 1px solid #ccc; border-radius:0 0 5px 5px;margin: 10px 10px 5px 0px;float:left}
+.macSettings table caption{ background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#ececec));
+                           -webkit-box-shadow: white 0px 1px 0px;
+                            text-align: left;
+                            padding: 5px 0 0 13px; 
+                            border-radius:5px 5px 0 0; 
+                            font-weight: bold; height: 25px;
+                            border: 1px solid #ccc;
+                           }
+
+.macSettings table tr td span{width: 80%; float: left;padding: 0 0 0 5px;}
+.mac-error_msg
+{
+background-color: lightYellow;
+border-color: #E6DB55;
+border-bottom-left-radius: 3px 3px;
+border-bottom-right-radius: 3px 3px;
+border-style: solid;
+border-width: 1px;
+border-top-left-radius: 3px 3px;
+border-top-right-radius: 3px 3px;
+margin: 5px 0px;
+padding: 5px 0.6em;
+width:1030px;
+float:left;
+font-weight: bold;
+}
+.mac-red-error
+{
+    color: red;
+}
+                .page_list
+                {
+                margin:0 auto;
+                text-align:center;
+                }
+
+
+
+
+
+
+
